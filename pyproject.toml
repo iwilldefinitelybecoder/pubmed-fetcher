@@ -1,6 +1,6 @@
 [project]
 name = "pubmed-fetcher-abhichandra"
-version = "0.1.0"
+version = "0.1.5"
 description = ""
 authors = [
     {name = "abhichandra",email = "abhichandrav108@gmail.com"}
@@ -14,7 +14,7 @@ dependencies = [
 [tool.poetry]
 packages = [{include = "pubmed_fetcher", from = "src"}]
 name = "pubmed-fetcher"
-version = "0.1.0"
+version = "0.1.5"
 description = "A Python package to fetch research papers from PubMed"
 authors = ["abhichanda <abhichandrav108@gmail.com>"]
 license = "MIT"
@@ -30,3 +30,6 @@ sphinx = "^8.2.3"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pubfetch = "pubmed_fetcher.cli:main"

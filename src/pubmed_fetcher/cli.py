@@ -4,7 +4,7 @@ import json
 import time
 import sys
 import io
-from pubmed_api import fetch_pubmed_papers
+from pubmed_fetcher.pubmed_api import fetch_pubmed_papers
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
