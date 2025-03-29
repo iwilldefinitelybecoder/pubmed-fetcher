@@ -46,11 +46,6 @@ Run unit tests using pytest:
 poetry run pytest tests/
 ```
 
-### Generating Documentation (Sphinx)
-To generate documentation:
-```sh
-poetry run sphinx-build -b html docs/ docs/_build
-```
 
 ---
 
@@ -100,5 +95,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ---
 
 ## Contact
-For questions, reach out via GitHub Issues or email at `your-email@example.com`.
+For questions, reach out via GitHub Issues or email at `abhichandrav108@gmail.com`.
 
