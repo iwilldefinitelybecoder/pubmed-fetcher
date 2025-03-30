@@ -53,7 +53,7 @@ To know the cli command args:
 ```sh
 poetry run python src/pubmed_fetcher/cli.py --help"
 ```
-
+---
 # PubMed Fetcher PYPI
 
 ## Installation
