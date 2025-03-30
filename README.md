@@ -19,7 +19,7 @@ PubMed Fetcher is a command-line tool that allows users to search PubMed for res
 ### Steps to Install
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/pubmed_fetcher.git
+    [git clone https://github.com/yourusername/pubmed_fetcher.git](https://github.com/iwilldefinitelybecoder/pubmed-fetcher)
     cd pubmed_fetcher
     ```
 2. Install Poetery if not installed already(optional)
