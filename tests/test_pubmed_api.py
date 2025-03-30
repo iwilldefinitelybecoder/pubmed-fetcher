@@ -1,7 +1,7 @@
 import pytest
 import requests
 from unittest.mock import patch
-from src.pubmed_api import fetch_pubmed_papers
+from src.pubmed_fetcher.pubmed_api import fetch_pubmed_papers
 
 def test_fetch_pubmed_benchmark(benchmark):
     result = benchmark(fetch_pubmed_papers, "AI in Healthcare", max_results=5)
