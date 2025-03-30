@@ -7,7 +7,7 @@ def test_fetch_pubmed_benchmark(benchmark):
     result = benchmark(fetch_pubmed_papers, "AI in Healthcare", max_results=5)
     assert isinstance(result, list)
 
-@patch("pubmed_api.requests.get")
+@patch("src.pubmed_fetcher.pubmed_api.requests.get")
 def test_fetch_pubmed_success(mock_get):
     """Test successful API response."""
     mock_get.return_value.status_code = 200
@@ -19,7 +19,7 @@ def test_fetch_pubmed_success(mock_get):
     assert isinstance(result, list)
 
 
-@patch("pubmed_api.requests.get")
+@patch("src.pubmed_fetcher.pubmed_api.requests.get")
 def test_fetch_pubmed_api_failure(mock_get):
     """Test API failure (400 Bad Request)."""
     mock_get.return_value.status_code = 400
