@@ -1,0 +1,82 @@
+PubMed Fetcher: Summary Report
+
+1. Introduction
+
+PubMed Fetcher is a Python-based command-line tool designed to retrieve research papers from PubMed. It simplifies the process of searching for academic publications by providing a user-friendly interface to interact with the PubMed API.
+
+2. Approach
+
+The project was built using Python with a focus on modularity and ease of use. The approach involved designing a CLI tool that accepts search queries and fetches relevant research papers. The development followed these steps:
+
+Project Initialization: Poetry was used for dependency management and packaging.
+
+Implementation:
+
+A CLI interface (cli.py) was developed to handle user input.
+
+A core module (pubmed_api.py) was implemented to interact with the PubMed API.
+
+Testing: Pytest was used to ensure functionality and correctness.
+
+Documentation: Sphinx was integrated for generating documentation.
+
+Publishing: The package was published to PyPI.
+
+3. Methodology
+
+3.1. CLI Design
+
+The command-line interface was implemented using argparse, allowing users to input search terms and retrieve research papers. The command structure was defined in pyproject.toml:
+
+[tool.poetry.scripts]
+pubfetch = "pubmed_fetcher.cli:main"
+
+3.2. API Integration
+
+The tool utilizes the PubMed API to fetch research papers based on user queries. The requests library was used to send HTTP requests and process JSON responses.
+
+3.3. Testing Strategy
+
+Unit tests were written for the API integration and CLI components.
+
+Pytest was used for automated testing.
+
+Pytest-benchmark was employed to measure execution performance.
+
+3.4. Packaging & Deployment
+
+Poetry was used to manage dependencies and build the package.
+
+The package was published to PyPI.
+
+The CLI tool was verified post-installation using pip.
+
+4. Results
+
+The CLI tool successfully fetches research papers based on user queries.
+
+The package was published to PyPI and can be installed via:
+
+pip install pubmed-fetcher-abhichandra
+
+The CLI command pubfetch "Machine Learning" retrieves relevant PubMed articles.
+
+Documentation was generated using Sphinx for user guidance.
+
+Testing confirmed the tool's stability and performance.
+
+5. Conclusion
+
+The PubMed Fetcher CLI tool provides a simple yet effective way to retrieve academic papers from PubMed. It is now available for public use and can be improved further by adding features such as advanced filtering and caching.
+
+6. Future Work
+
+Implementing authentication for personalized PubMed searches.
+
+Enhancing search capabilities with advanced query parameters.
+
+Improving output formatting for better readability.
+
+Adding a GUI wrapper for non-technical users.
+
+Repository: GitHub Link

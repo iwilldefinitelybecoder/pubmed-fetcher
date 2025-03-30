@@ -22,11 +22,15 @@ PubMed Fetcher is a command-line tool that allows users to search PubMed for res
     git clone https://github.com/yourusername/pubmed_fetcher.git
     cd pubmed_fetcher
     ```
-2. Install dependencies using Poetry:
+2. Install Poetery if not installed already(optional)
+    ```sh
+    (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+    ```
+3. Install dependencies using Poetry:
     ```sh
     poetry install
     ```
-3. Activate the virtual environment:
+4. Activate the virtual environment:
     ```sh
     poetry shell
     ```
