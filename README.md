@@ -61,7 +61,7 @@ poetry run python src/pubmed_fetcher/cli.py --help"
 You can install **pubmed-fetcher** from PyPI using pip:
 
 ```sh
-pip install pubmed-fetcher #installs the fetcher
+pip install pubmed-fetcher-abhichandra #installs the fetcher
 pubfetch "Machine Learning" 
 pubfetch "Deep Learning" "Neural Networks"
 pubfetch --help
