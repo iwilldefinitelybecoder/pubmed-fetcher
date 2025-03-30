@@ -32,7 +32,7 @@ PubMed Fetcher is a command-line tool that allows users to search PubMed for res
     ```
 4. Activate the virtual environment:
     ```sh
-    poetry shell
+    poetry env activate
     ```
 
 ---
@@ -41,7 +41,7 @@ PubMed Fetcher is a command-line tool that allows users to search PubMed for res
 ### Running the CLI
 To search for research articles on a specific topic:
 ```sh
-poetry run python src/cli.py "Machine Learning"
+poetry run python src/pubmed_fetcher/cli.py "Machine Learning"
 ```
 
 ### Running Tests
@@ -49,9 +49,27 @@ Run unit tests using pytest:
 ```sh
 poetry run pytest tests/
 ```
+To know the cli command args:
+```sh
+poetry run python src/pubmed_fetcher/cli.py --help"
+```
 
+# PubMed Fetcher PYPI
 
+## Installation
+
+You can install **pubmed-fetcher** from PyPI using pip:
+
+```sh
+pip install pubmed-fetcher #installs the fetcher
+pubfetch "Machine Learning" 
+pubfetch "Deep Learning" "Neural Networks"
+pubfetch --help
+pubfetch --version
+pip uninstall pubmed-fetcher
+```
 ---
+
 
 ## How It Works
 1. **CLI Execution:**
